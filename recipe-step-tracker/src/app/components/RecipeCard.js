@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 
 export default function RecipeCard({ recipe }) {
@@ -6,7 +7,7 @@ export default function RecipeCard({ recipe }) {
       <h2 className="text-xl font-bold">{recipe.title}</h2>
       <p>{recipe.description}</p>
       <Link href={`/recipes/${recipe.id}`}>
-        <a className="text-blue-500 mt-4 inline-block">View Recipe</a>
+        View Recipe
       </Link>
     </div>
   );
